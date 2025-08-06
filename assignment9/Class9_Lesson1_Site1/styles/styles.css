@@ -1,0 +1,57 @@
+body {
+   margin: 0;                  
+   font-size: 2.5em;
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: 50px 100px 400px 100px 50px;
+   grid-template-areas: "head" "nav" "main" "aside" "foot";     
+}
+
+header, 
+nav, 
+main, 
+aside, 
+footer {
+   text-align: center;
+}
+
+header {
+   grid-area: head;
+   background: cornflowerblue;
+}
+
+nav {
+   grid-area: nav;      
+   background: khaki;
+}
+
+main {
+   grid-area: main;      
+   background: darkseagreen;
+}
+
+aside {
+   grid-area: aside;      
+   background: goldenrod;
+}
+
+footer {
+   grid-area: foot;      
+   background: thistle;
+}
+
+body {
+   background-color: green;
+}
+
+@media screen and (min-width: 600px) {
+   body {
+      background-color: blue;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   body {
+      background-color: red;
+   }
+}
