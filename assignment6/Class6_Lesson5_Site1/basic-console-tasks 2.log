@@ -1,0 +1,27 @@
+let myHeading = document.getElementById("heading-id");
+undefined
+console.log(myHeading);
+VM233:1 <h1 id=​"heading-id" style=​"text-align:​ center;​color:​ fuchsia;​ background-color:​ black;​">​My h1 heading.​</h1>​
+undefined
+console.log("myHeading textAlign value: " + myHeading.style.textAlign);
+VM461:1 myHeading textAlign value: center
+undefined
+console.log("myHeading color value: " + myHeading.style.color);
+VM736:1 myHeading color value: fuchsia
+undefined
+console.log("myHeading background-color value: " + myHeading.style.backgroundColor);
+VM1061:1 myHeading background-color value: black
+undefined
+console.log("myHeading background-color value: " + myHeading.style.backgroundColor);
+VM1065:1 myHeading background-color value: black
+undefined
+myHeading.style.textAlign = "right";
+'right'
+myHeading.style.color = "green";
+'green'
+myHeading.style.backgroundColor = "yellow"
+'yellow'
+myHeading.innerHTML = "I can <em>indeed</em> modify the heading's content!"
+"I can <em>indeed</em> modify the heading's content!"
+document.body.style.backgroundColor = "peachpuff";
+'peachpuff'

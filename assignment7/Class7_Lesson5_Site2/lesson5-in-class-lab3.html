@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>lesson5-in-class-lab3.html</h1>
+    <script>
+/*
+
+JavaScript Loops (applying repeated execution techniques)...
+
+Save your work to a file with this name:  lesson5-in-class-lab3.html
+
+Include the standard VS Code page content using the  ! + <Tab> keyboard shortcut.  Within the body tag, insert an <h1> tag that contains the full file name above.   Next, create a <script> tag and copy / paste the below comments within this tag.  Then, provide your answers after each numbered task.  Check your work as needed by opening the file in your browser with DevTools turned on and the Console tab active.
+
+*/
+
+      /*
+
+1. Write a JavaScript program that uses two for loops:
+
+The first loop computes the sum of all even numbers between 1 and 100 (inclusive) and then outputs the result to the console window.
+The second loop computes the product of all odd numbers between 1 and 10 (inclusive) and then outputs the result to the console window.
+*/
+
+      // let sumEvenIntegers = 0;
+      // let productOddNumbers = 1;
+
+      // for(let i = 1; i <= 100; i++) {
+      //   if ((i % 2) ===0) {
+      //     sumEvenIntegers +=i;
+      //   }
+      // } 
+      // console.log("Sum of all even numbers between 1 and 100: " + sumEvenIntegers);
+
+      // for ( let i=1; i <=10; i++) {
+      //   if ((i % 2) !== 0) {
+      //     productOddNumbers *= i;
+      //     }
+      // }
+      // console.log("Product of all odd numbers between 1 and 10: " + productOddNumbers);
+
+      /*
+  
+2. Write a JavaScript program that uses a while loop:
+
+The loop computes the sum of all numbers entered by the user until the user enters 0.  Consider 0 as the sentinel value, which indicates the user desires to conclude the program.
+Once the loop concludes (i.e. the sentinel was provided), output the result to the console window.
+*/
+
+     let sumOfNumbers = 0.0;
+     let inputNumber = 999;
+
+     while(inputNumber !==0) {
+       inputNumber = parseFloat(prompt("Enter a number (0 to stop):"));
+       sumOfNumbers += inputNumber;
+     }
+     console.log("Sum of all numbers entered: " + sumOfNumbers.toFixed(2));
+    </script>
+  </body>
+</html>

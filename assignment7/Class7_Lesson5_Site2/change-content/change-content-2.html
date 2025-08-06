@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interactive JavaScript</title>
+  </head>
+  <body>
+    <h2>Demo JavaScript</h2>
+
+    <!-- Use Lorem10 + <tab> to obtain the below text. -->
+    <p id="para1">Paragraph 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, earum.</p>
+    <button type="button" onclick="changeParagraph1()">Change Paragraph 1</button>
+
+    <!-- Use Lorem50 + <tab> to obtain the below text. -->
+    <p id="para2">
+      Paragraph 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia necessitatibus quas autem fugiat iusto esse tempore quos,
+      totam excepturi rerum odio enim commodi soluta possimus iste magni sunt quis aut assumenda. Amet odio molestias adipisci fuga. Dolorum
+      consectetur nisi sunt soluta. Numquam incidunt atque adipisci cupiditate! Molestiae, temporibus ex?
+    </p>
+    <button type="button" onclick="changeParagraph2()">Change Paragraph 2</button>
+
+    <!-- Use Lorem30 + <tab> to obtain the below text. -->
+    <p id="para3">
+      Paragraph 3 - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum minima repellendus cupiditate quae ipsum adipisci temporibus
+      natus aut, pariatur suscipit doloribus, nobis voluptatem eum fugit aspernatur. Nostrum ad blanditiis distinctio?
+    </p>
+    <button type="button" onclick="changeParagraph3()">Change Paragraph 3</button>
+
+    <!-- The below calls a built-in JavaScript function to reload the page and bypasses any browser cache. -->
+    <br /><br />
+    <button type="button" onclick="location.reload()">Reload the browser page.</button>
+
+    <script>
+      function changeParagraph1() {
+        document.getElementById("para1").innerHTML = "Paragraph 1 <span style='color: red;'>content and appearance </span> have changed.";
+        console.log("The changeParagraph1() function was called.");
+      }
+
+      function changeParagraph2() {
+        document.getElementById("para2").innerHTML = "Paragraph 2 <span style='color: red;'>content and appearance </span> have changed.";
+        console.log("The changeParagraph2() function was called.");
+      }
+
+      function changeParagraph3() {
+        document.getElementById("para3").innerHTML = "Paragraph 3 <span style='color: red;'>content and appearance </span> have changed.";
+        console.log("The changeParagraph3() function was called.");
+      }
+    </script>
+  </body>
+</html>

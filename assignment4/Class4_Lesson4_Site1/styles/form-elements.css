@@ -1,0 +1,8 @@
+/* General form styling */
+form {
+  width: 50%;
+  background-color: rgb(160, 105, 215);
+  border: 2px solid #a0c4ff; /*Solid border*/
+  border-radius: 10px;
+  outline: 3px dashed #bde0fe;/*Dash outline*/
+}

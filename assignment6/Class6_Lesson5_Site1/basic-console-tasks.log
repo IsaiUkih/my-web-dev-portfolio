@@ -1,0 +1,67 @@
+age;
+150
+nameFirst
+'Kori'
+nameFirst = "Isaiah";
+'Isaiah'
+nameFirst
+'Isaiah'
+age;
+150
+console.log(age);
+VM2050:1 150
+undefined
+age = (150 + 1)
+151
+age = age + (150 +1);
+302
+age = (age - 10);
+292
+age = (age * 2);
+584
+age = 150;
+150
+age = (age / 2);
+75
+age = (150 ** 2);
+22500
+let remainder = (age / 3);
+undefined
+console.log (remainder);
+VM2590:1 7500
+undefined
+age = (age + 1);
+22501
+++age;
+22502
+--age;
+22501
+--age;
+22500
+--age;
+22499
+--age;
+22498
+let greeting = "This is ";
+undefined
+greeting += "a great day!";
+'This is a great day!'
+let operand1 = Number(prompt("Enter the first numner: "));
+undefined
+operand1
+13
+operand1;
+13
+let operand2 = Number(prompt("Enter the second numner: "));
+undefined
+operand2;
+4.5
+console.log(operand2);
+VM3243:1 4.5
+undefined
+console.log("The second number is: " +operand2);
+VM3394:1 The second number is: 4.5
+undefined
+console.log("Addition: " + (operand1 + operand2));
+VM3515:1 Addition: 17.5
+undefined

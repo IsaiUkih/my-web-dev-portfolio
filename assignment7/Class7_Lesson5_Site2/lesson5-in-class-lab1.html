@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>lesson5-in-class-lab1.html</h1>
+    <script>
+/*
+
+Basic JavaScript Tasks (outputting variable values, prompting the user, performing math operations).
+
+Save your work to a file with this name:  lesson5-in-class-lab1.html
+
+Include the standard VS Code page content using the  ! + <Tab> keyboard shortcut.  Within the body tag, insert an <h1> tag that contains the full file name above.   Next, create a <script> tag and copy / paste the below comments within this tag.  Then, provide your answers after each numbered task.  Check your work by opening the file in your browser with DevTools turned on and the Console tab active.
+
+*/
+
+      /*
+
+1. Write JavaScript code that prints any three of the earth's seven continents.
+
+*/
+
+      console.log("Africa")
+      console.log("North America")
+      console.log("Asia")
+
+      /*
+2. Write JavaScript code that prints the four seasons.  Store each season in its own variable.  Then, print each season.  Each season should appear on its own line.  
+*/
+      let season1 = "Fall";
+      let season2 = "Winter";
+      let season3 = "Spring";
+      let season4 = "Summer";
+
+      console.log(season1);
+      console.log(season2);
+      console.log(season3);
+      console.log(season4);
+
+      /*
+ 3. Write JavaScript code that asks the user for their favorite class.  Store the class in its own variable.  Then, print the user's favorite class on its own line.
+*/
+      let faveClass = prompt ("Enter your favorite class: ");
+      console.log(faveClass);
+
+      /*
+4. Write JavaScript code that prompts the user for their first name and age.  Store each value in its own variable.  Output the user's name and age on separate lines.
+
+Example model output to follow...
+Your name is Bailey.
+Your age is 22.
+*/
+
+      let nameFirst, age;
+      nameFirst = prompt("Enter first name: ");
+      age = prompt("Enter age: ");
+      console.log("Enter age:" + nameFirst);
+      console.log("Your name is" + age);
+
+      /*
+5. Write JavaScript code that prompts the user for two numbers and then prints the sum, difference, product, and average.  Output each result (sum, difference, product, and average) on separate lines.  Format each result with two decimal positions.
+*/
+      let operand1 = 0.0, operand2 = 0.0;
+
+      operand1 = parseFloat(prompt("Enter first number: "));
+      operand1 = parseFloat(prompt("Enter first number: "));
+      console.log("operand1:" + operand1);
+      console.log("operand2:" + operand2);
+
+      // Perform math tasks.
+      console.log("Sum of operands: " + (operand1 + operand2).toFixed(2));
+      console.log("Difference of operands: " + (operand1 - operand2).toFixed(2));
+      console.log("Product of operands: " + (operand1 * operand2).toFixed(2));
+      console.log("Average of operands: " + ((operand1 + operand2) /2).toFixed(2));
+    </script>
+   </body>
+</html>

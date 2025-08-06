@@ -1,0 +1,92 @@
+/* Global variables... */
+:root {
+   --header-color: white;
+   --font-color: #aed3e1;
+   --bg-color: #070040;
+}
+
+/* Redefinded HTML tags... */
+body {
+   color: var(--font-color);
+   background-color: var(--bg-color);
+   font-family: Arial, sans-serif;
+}
+      
+h1 {
+   color: var(--header-color);
+   font-size: 3rem;
+   font-style: italic;
+   font-variant: small-caps;
+   text-align: center;
+ }
+      
+h2 {
+   color: var(--header-color);
+   font-size: 2.5rem;
+   font-variant: small-caps;
+}
+
+ nav {
+   text-align: center;
+   margin-top: 14px;
+}
+
+nav a {
+   text-decoration: none;
+   text-transform: lowercase;
+   font-weight: bold;
+   font-size: larger;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+section {
+   margin-top: 50px;
+   margin-left: 20px;
+}
+
+td {
+  padding: 10px;
+}
+
+/* Pseudo classes */
+a:link {
+  color: var(--font-color);  
+}   
+
+a:visited {
+  color: var(--font-color);  
+}   
+
+a:hover {
+  color: yellow; 
+}  
+
+a:active {
+  color: purple;
+}
+
+/* Custom classes... */
+.band-member {
+  float: left;
+  clear: both;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}    
+
+/* ID classes... */
+#members {
+  display: inline-block;
+}
+
+#members ul {
+  float: left;
+}
+
+#members img {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interactive JavaScript</title>
+  </head>
+  <body>
+    <h2>Demo JavaScript</h2>
+
+    <!-- Use Lorem10 + <tab> to obtain the below text. -->
+    <p id="para1">Paragraph 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, earum.</p>
+    <button type="button" onclick="changeParagraph1()">Change Paragraph 1</button>
+
+    <script>
+      function changeParagraph1() {
+        document.getElementById("para1").innerHTML = "Paragraph 1 <span style='color: red;'>content and appearance </span> have changed.";
+        console.log("The changeParagraph1() function was called.");
+      }
+    </script>
+  </body>
+</html>

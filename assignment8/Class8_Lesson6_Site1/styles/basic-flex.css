@@ -1,0 +1,16 @@
+/* flex container */
+#container {
+   display: flex;
+   gap: 10px;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   border: 1px green solid;
+   padding: 5px;
+}
+
+/* flex items */
+#container > div {
+   width: 200px;
+   padding: 10px;
+   border: 1px blue solid;
+}

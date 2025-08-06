@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>lesson5-in-class-lab2.html</h1>
+    <script>
+/*
+
+JavaScript Conditionals (applying conditional execution techniques)...
+
+Save your work to a file with this name:  lesson5-in-class-lab2.html
+
+Include the standard VS Code page content using the  ! + <Tab> keyboard shortcut.  Within the body tag, insert an <h1> tag that contains the full file name above.   Next, create a <script> tag and copy / paste the below comments within this tag.  Then, provide your answers after each numbered task.  Check your work as needed by opening the file in your browser with DevTools turned on and the Console tab active.
+
+*/
+
+/*
+1. You want to determine the cheapest option for living expenses in your third year of college.  This entails comparing the university's annual charge of $7,500 versus what you can find on your own for an off-campus rental.  Write a JavaScript program that asks the user to enter the monthly rent of a 12-month lease for an off-campus apartment.  Output the cheapest option to the console window.
+*/
+
+      const expensesOnCampusAnnual= 7500.0;
+      let expensesOffCampusAnnual = 0.0;
+      let expensesOffCampusMonthly = 0.0;
+
+      expensesOffCampusMonthly = parseFloat(prompt("Enter monthly off-campus expenses amount: "));
+      expensesOffCampusAnnual = expensesOffCampusMonthly * 12;
+
+      console.log("expensesOnCampusAnnual: " + expensesOnCampusAnnual);
+      console.log("expensesOffCampusAnnual: " + expensesOffCampusAnnual);
+      console.log("expensesOffCampusMonthly: " + expensesOffCampusMonthly);
+      
+      if (expensesOffCampusAnnual > expensesOnCampusAnnual) {
+            console.log("It's less expensive to live on-campus.");
+      } else if (expensesOffCampusAnnual < expensesOnCampusAnnual) {
+            console.log("It's less expensive to live on-campus.");
+      } else {
+            console.log("The expenses to live on or off -campus are the same");
+      }
+
+      /*
+ 2. Write a JavaScript program to request an IST course number from the user.  Their expected choices are either 140, 242, or 261. Use a switch case statement to output the title of the course to the console window. Course titles can be found at https://ist.psu.edu/learning/courses/istLinks to an external site. If 140, 242, or 261 are not entered by the user, output a default message of "(IST course number is unknown)" to the console window.
+
+ */
+      const titleIST140 = "Introduction to Application Development";
+      const titleIST242 = "Intermediate & Object-Oriented Application Development";
+      const titleIST261 = "Application Development Design Studio I";
+      const titleUnknown = "(IST course number is unknown.)";
+      let courseToLookUp = 0;
+
+      courseToLookUp = parseInt (prompt("Enter IST course number to evaluate"));
+
+      switch (courseToLookUp) {
+        case 140:
+          console.log = ("IST course title of " + courseToLookUp + " is: " + titleIST140);
+          break;
+        case 242:
+         console.log = ("IST course title of " + courseToLookUp + " is: " + titleIST242);
+         break;
+       case 261:
+         console.log = ("IST course title of " + courseToLookUp + " is: " + titleIST261);
+         break;
+       default:
+         console.log (titleUnknown);
+      }
+    </script>
+   </body>
+</html>
